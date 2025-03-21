@@ -1,0 +1,1553 @@
+[FileInfo]
+CreatedBy=Michael Bellwied
+ModifiedBy=KMA
+Description=EDS for CANopen encoder OCD
+CreationTime=02:31PM
+CreationDate=09-03-2021
+ModificationTime=02:31PM
+ModificationDate=09-03-2021
+FileName=OCD-CAA1-V01-02-ST.eds
+FileVersion=1
+FileRevision=2
+EDSVersion=4.0
+
+[DeviceInfo]
+VendorName=FRABA Posital GmbH
+VendorNumber=0x42
+ProductName=OCD Encoder Series
+RevisionNumber=0x00010000
+OrderCode=OCD-CAA1B
+BaudRate_10=0
+BaudRate_20=1
+BaudRate_50=1
+BaudRate_125=1
+BaudRate_250=1
+BaudRate_500=1
+BaudRate_800=1
+BaudRate_1000=1
+SimpleBootUpMaster=0
+SimpleBootUpSlave=1
+Granularity=1
+DynamicChannelsSupported=0
+CompactPDO=0
+GroupMessaging=0
+NrOfRXPDO=0
+NrOfTXPDO=2
+LSS_Supported=1
+
+[DummyUsage]
+Dummy0001=0
+Dummy0002=0
+Dummy0003=0
+Dummy0004=0
+Dummy0005=0
+Dummy0006=0
+Dummy0007=0
+
+[Comments]
+Lines=0
+
+[MandatoryObjects]
+SupportedObjects=3
+1=0x1000
+2=0x1001
+3=0x1018
+
+[1000]
+ParameterName=Device Type
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=0x10196
+PDOMapping=0
+
+[1001]
+ParameterName=Error Register
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x0
+PDOMapping=0
+
+[1018]
+ParameterName=Identity Object
+ObjectType=0x9
+SubNumber=5
+
+[1018sub0]
+ParameterName=Number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x4
+PDOMapping=0
+LowLimit=1
+HighLimit=4
+
+[1018sub1]
+ParameterName=Vendor ID
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=0x42
+PDOMapping=0
+
+[1018sub2]
+ParameterName=Product Code
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[1018sub3]
+ParameterName=Revision number
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=0x00010000
+PDOMapping=0
+
+[1018sub4]
+ParameterName=Serial number
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[OptionalObjects]
+SupportedObjects=69
+1=0x1003
+2=0x1005
+3=0x1008
+4=0x1009
+5=0x100A
+6=0x100C
+7=0x100D
+8=0x1010
+9=0x1011
+10=0x1012
+11=0x1013
+12=0x1014
+13=0x1017
+14=0x1020
+15=0x1029
+16=0x1800
+17=0x1801
+18=0x1A00
+19=0x1A01
+20=0x6000
+21=0x6001
+22=0x6002
+23=0x6003
+24=0x6004
+25=0x6030
+26=0x6040
+27=0x6200
+28=0x6300
+29=0x6301
+30=0x6302
+31=0x6310
+32=0x6311
+33=0x6312
+34=0x6313
+35=0x6314
+36=0x6315
+37=0x6316
+38=0x6317
+39=0x6320
+40=0x6321
+41=0x6322
+42=0x6323
+43=0x6324
+44=0x6325
+45=0x6326
+46=0x6327
+47=0x6330
+48=0x6331
+49=0x6332
+50=0x6333
+51=0x6334
+52=0x6335
+53=0x6336
+54=0x6337
+55=0x6400
+56=0x6401
+57=0x6402
+58=0x6500
+59=0x6501
+60=0x6502
+61=0x6503
+62=0x6504
+63=0x6505
+64=0x6506
+65=0x6507
+66=0x6508
+67=0x6509
+68=0x650A
+69=0x650B
+
+[1003]
+ParameterName=Pre-defined Error Field
+ObjectType=0x8
+SubNumber=3
+
+[1003sub0]
+ParameterName=Number of Errors
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1003sub1]
+ParameterName=Standard Error Field 1
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+
+[1003sub2]
+ParameterName=Standard Error Field 2
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+
+[1005]
+ParameterName=COB-ID SYNC
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x80
+PDOMapping=0
+
+[1008]
+ParameterName=Manufacturer Device Name
+ObjectType=0x7
+DataType=0x0009
+AccessType=const
+PDOMapping=0
+
+[1009]
+ParameterName=Manufacturer Hardware Version
+ObjectType=0x7
+DataType=0x0009
+AccessType=const
+PDOMapping=0
+
+[100A]
+ParameterName=Manufacturer Software Version
+ObjectType=0x7
+DataType=0x0009
+AccessType=const
+PDOMapping=0
+
+[100C]
+ParameterName=Guard Time
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[100D]
+ParameterName=Life Time Factor
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x00
+PDOMapping=0
+
+[1010]
+ParameterName=Store Parameter Field
+ObjectType=0x8
+SubNumber=2
+
+[1010sub0]
+ParameterName=Number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[1010sub1]
+ParameterName=Save all Parameters
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1011]
+ParameterName=Restore Default Parameters
+ObjectType=0x8
+SubNumber=2
+
+[1011sub0]
+ParameterName=Number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[1011sub1]
+ParameterName=Restore all Default Parameters
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1012]
+ParameterName=COB-ID Time Stamp
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x100
+PDOMapping=0
+
+[1013]
+ParameterName=High Resolution Time Stamp
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1014]
+ParameterName=COB-ID EMCY
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=$NODEID+0x80
+PDOMapping=0
+
+[1017]
+ParameterName=Producer Heartbeat Time
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1020]
+ParameterName=Verify Configuration
+ObjectType=0x8
+SubNumber=3
+
+[1020sub0]
+ParameterName=Number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=2
+PDOMapping=0
+
+[1020sub1]
+ParameterName=Configuration date
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1020sub2]
+ParameterName=Configuration time
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1029]
+ParameterName=Error behaviour
+ObjectType=0x8
+SubNumber=2
+
+[1029sub0]
+ParameterName=Nr of Error Classes
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[1029sub1]
+ParameterName=Communication Error
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1800]
+ParameterName=Transmit PDO Communication Parameter 0
+ObjectType=0x9
+SubNumber=5
+
+[1800sub0]
+ParameterName=Number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=5
+PDOMapping=0
+LowLimit=0x02
+HighLimit=0x05
+
+[1800sub1]
+ParameterName=COB-ID
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=$NODEID+0x180
+PDOMapping=0
+
+[1800sub2]
+ParameterName=Transmission Type
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0xFE
+PDOMapping=0
+
+[1800sub3]
+ParameterName=Inhibit Time
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1800sub5]
+ParameterName=Event Timer
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1801]
+ParameterName=Transmit PDO Communication Parameter 1
+ObjectType=0x9
+SubNumber=5
+
+[1801sub0]
+ParameterName=Number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0x5
+PDOMapping=0
+
+[1801sub1]
+ParameterName=COB-ID
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=$NODEID+0x280
+PDOMapping=0
+
+[1801sub2]
+ParameterName=Transmission Type
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x1
+PDOMapping=0
+
+[1801sub3]
+ParameterName=Inhibit Time
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1801sub5]
+ParameterName=Event Timer
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1A00]
+ParameterName=Transmit PDO Mapping Parameter 0
+ObjectType=0x9
+SubNumber=2
+
+[1A00sub0]
+ParameterName=Number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1A00sub1]
+ParameterName=PDO Mapping Entry 1
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x60040020
+PDOMapping=0
+
+[1A01]
+ParameterName=Transmit PDO Mapping Parameter 0
+ObjectType=0x9
+SubNumber=2
+
+[1A01sub0]
+ParameterName=Number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[1A01sub1]
+ParameterName=PDO Mapping Entry 1
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x60040020
+PDOMapping=0
+
+[6000]
+ParameterName=Operating parameters
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x4
+PDOMapping=0
+
+[6001]
+ParameterName=Measuring units per revolution
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[6002]
+ParameterName=Total measuring range in measuring units
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[6003]
+ParameterName=Preset value
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[6004]
+ParameterName=Position value
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=1
+
+[6030]
+ParameterName=Speed Value
+ObjectType=0x8
+SubNumber=2
+
+[6030sub0]
+ParameterName=Number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[6030sub1]
+ParameterName=Speed Value channel1
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[6040]
+ParameterName=Acceleration Value
+ObjectType=0x8
+SubNumber=2
+
+[6040sub0]
+ParameterName=Number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[6040sub1]
+ParameterName=Acceleration Value channel1
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[6200]
+ParameterName=Cyclic timer
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+PDOMapping=0
+
+[6300]
+ParameterName=Cam State Register
+ObjectType=0x8
+SubNumber=2
+
+[6300sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[6300sub1]
+ParameterName=Cam State Channel1
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+PDOMapping=1
+
+[6301]
+ParameterName=Cam Enable Register
+ObjectType=0x8
+SubNumber=2
+
+[6301sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[6301sub1]
+ParameterName=Cam Enable Register1
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[6302]
+ParameterName=Cam polarity register
+ObjectType=0x8
+SubNumber=2
+
+[6302sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[6302sub1]
+ParameterName=Cam polarity register1
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[6310]
+ParameterName=Cam 1 low limit
+ObjectType=0x8
+SubNumber=2
+
+[6310sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[6310sub1]
+ParameterName=Cam 1 low limit channel1
+ObjectType=0x7
+DataType=0x0004
+AccessType=rw
+PDOMapping=0
+
+[6311]
+ParameterName=Cam 2 low limit
+ObjectType=0x8
+SubNumber=2
+
+[6311sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[6311sub1]
+ParameterName=Cam 2 low limit channel1
+ObjectType=0x7
+DataType=0x0004
+AccessType=rw
+PDOMapping=0
+
+[6312]
+ParameterName=Cam 3 low limit
+ObjectType=0x8
+SubNumber=2
+
+[6312sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[6312sub1]
+ParameterName=Cam 3 low limit channel1
+ObjectType=0x7
+DataType=0x0004
+AccessType=rw
+PDOMapping=0
+
+[6313]
+ParameterName=Cam 4 low limit
+ObjectType=0x8
+SubNumber=2
+
+[6313sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[6313sub1]
+ParameterName=Cam 4 low limit channel1
+ObjectType=0x7
+DataType=0x0004
+AccessType=rw
+PDOMapping=0
+
+[6314]
+ParameterName=Cam 5 low limit
+ObjectType=0x8
+SubNumber=2
+
+[6314sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[6314sub1]
+ParameterName=Cam 5 low limit channel1
+ObjectType=0x7
+DataType=0x0004
+AccessType=rw
+PDOMapping=0
+
+[6315]
+ParameterName=Cam 6 low limit
+ObjectType=0x8
+SubNumber=2
+
+[6315sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[6315sub1]
+ParameterName=Cam 6 low limit channel1
+ObjectType=0x7
+DataType=0x0004
+AccessType=rw
+PDOMapping=0
+
+[6316]
+ParameterName=Cam 7 low limit
+ObjectType=0x8
+SubNumber=2
+
+[6316sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[6316sub1]
+ParameterName=Cam 7 low limit channel1
+ObjectType=0x7
+DataType=0x0004
+AccessType=rw
+PDOMapping=0
+
+[6317]
+ParameterName=Cam 8 low limit
+ObjectType=0x8
+SubNumber=2
+
+[6317sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[6317sub1]
+ParameterName=Cam 8 low limit channel1
+ObjectType=0x7
+DataType=0x0004
+AccessType=rw
+PDOMapping=0
+
+[6320]
+ParameterName=Cam 1 high Limit
+ObjectType=0x8
+SubNumber=2
+
+[6320sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[6320sub1]
+ParameterName=Cam 1 high Limit channel1
+ObjectType=0x7
+DataType=0x0004
+AccessType=rw
+PDOMapping=0
+
+[6321]
+ParameterName=Cam 2 high Limit
+ObjectType=0x8
+SubNumber=2
+
+[6321sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[6321sub1]
+ParameterName=Cam 2 high Limit channel1
+ObjectType=0x7
+DataType=0x0004
+AccessType=rw
+PDOMapping=0
+
+[6322]
+ParameterName=Cam 3 high Limit
+ObjectType=0x8
+SubNumber=2
+
+[6322sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[6322sub1]
+ParameterName=Cam 3 high Limit channel1
+ObjectType=0x7
+DataType=0x0004
+AccessType=rw
+PDOMapping=0
+
+[6323]
+ParameterName=Cam 4 high Limit
+ObjectType=0x8
+SubNumber=2
+
+[6323sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[6323sub1]
+ParameterName=Cam 4 high Limit channel1
+ObjectType=0x7
+DataType=0x0004
+AccessType=rw
+PDOMapping=0
+
+[6324]
+ParameterName=Cam 5 high Limit
+ObjectType=0x8
+SubNumber=2
+
+[6324sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[6324sub1]
+ParameterName=Cam 5 high Limit channel1
+ObjectType=0x7
+DataType=0x0004
+AccessType=rw
+PDOMapping=0
+
+[6325]
+ParameterName=Cam 6 high Limit
+ObjectType=0x8
+SubNumber=2
+
+[6325sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[6325sub1]
+ParameterName=Cam 6 high Limit channel1
+ObjectType=0x7
+DataType=0x0004
+AccessType=rw
+PDOMapping=0
+
+[6326]
+ParameterName=Cam 7 high Limit
+ObjectType=0x8
+SubNumber=2
+
+[6326sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[6326sub1]
+ParameterName=Cam 7 high Limit channel1
+ObjectType=0x7
+DataType=0x0004
+AccessType=rw
+PDOMapping=0
+
+[6327]
+ParameterName=Cam 8 high Limit
+ObjectType=0x8
+SubNumber=2
+
+[6327sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[6327sub1]
+ParameterName=Cam 8 high Limit channel1
+ObjectType=0x7
+DataType=0x0004
+AccessType=rw
+PDOMapping=0
+
+[6330]
+ParameterName=Cam 1 hysteresis
+ObjectType=0x8
+SubNumber=2
+
+[6330sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[6330sub1]
+ParameterName=Cam 1 hysteresis channel1
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+PDOMapping=0
+
+[6331]
+ParameterName=Cam 2 hysteresis
+ObjectType=0x8
+SubNumber=2
+
+[6331sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[6331sub1]
+ParameterName=Cam 2 hysteresis channel1
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+PDOMapping=0
+
+[6332]
+ParameterName=Cam 3 hysteresis
+ObjectType=0x8
+SubNumber=2
+
+[6332sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[6332sub1]
+ParameterName=Cam 3 hysteresis channel1
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+PDOMapping=0
+
+[6333]
+ParameterName=Cam 4 hysteresis
+ObjectType=0x8
+SubNumber=2
+
+[6333sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[6333sub1]
+ParameterName=Cam 4 hysteresis channel1
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+PDOMapping=0
+
+[6334]
+ParameterName=Cam 5 hysteresis
+ObjectType=0x8
+SubNumber=2
+
+[6334sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[6334sub1]
+ParameterName=Cam 5 hysteresis channel1
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+PDOMapping=0
+
+[6335]
+ParameterName=Cam 6 hysteresis
+ObjectType=0x8
+SubNumber=2
+
+[6335sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[6335sub1]
+ParameterName=Cam 6 hysteresis channel1
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+PDOMapping=0
+
+[6336]
+ParameterName=Cam 7 hysteresis
+ObjectType=0x8
+SubNumber=2
+
+[6336sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[6336sub1]
+ParameterName=Cam 7 hysteresis channel1
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+PDOMapping=0
+
+[6337]
+ParameterName=Cam 8 hysteresis
+ObjectType=0x8
+SubNumber=2
+
+[6337sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[6337sub1]
+ParameterName=Cam 8 hysteresis channel1
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+PDOMapping=0
+
+[6400]
+ParameterName=Area state register
+ObjectType=0x8
+SubNumber=2
+
+[6400sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[6400sub1]
+ParameterName=Work area state channel
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+PDOMapping=1
+
+[6401]
+ParameterName=Work area low limit
+ObjectType=0x8
+SubNumber=2
+
+[6401sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[6401sub1]
+ParameterName=Work area low limit channel1
+ObjectType=0x7
+DataType=0x0004
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[6402]
+ParameterName=Work area high limit
+ObjectType=0x8
+SubNumber=2
+
+[6402sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[6402sub1]
+ParameterName=Work area high limit1
+ObjectType=0x7
+DataType=0x0004
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[6500]
+ParameterName=Operating Status
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[6501]
+ParameterName=Single Turn Resolution
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[6502]
+ParameterName=Number of distinguishable revolutions
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[6503]
+ParameterName=Alarms
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[6504]
+ParameterName=Supported alarms
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0x1
+PDOMapping=0
+
+[6505]
+ParameterName=Warnings
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[6506]
+ParameterName=Supported warnings
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0x1000
+PDOMapping=0
+
+[6507]
+ParameterName=Profile and software version
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=0x04040302
+PDOMapping=0
+
+[6508]
+ParameterName=Operating time
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=0xFFFFFFFF
+PDOMapping=0
+
+[6509]
+ParameterName=Offset value
+ObjectType=0x7
+DataType=0x0004
+AccessType=ro
+PDOMapping=0
+
+[650A]
+ParameterName=Module_identification
+ObjectType=0x8
+SubNumber=4
+
+[650Asub0]
+ParameterName=Module identification number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=3
+PDOMapping=0
+
+[650Asub1]
+ParameterName=Module_identification_manufacturer_offset_value
+ObjectType=0x7
+DataType=0x0004
+AccessType=ro
+PDOMapping=0
+
+[650Asub2]
+ParameterName=Module_identification_manufacturer_min_position_value
+ObjectType=0x7
+DataType=0x0004
+AccessType=ro
+PDOMapping=0
+
+[650Asub3]
+ParameterName=Module_identification_manufacturer_max_position_value
+ObjectType=0x7
+DataType=0x0004
+AccessType=ro
+PDOMapping=0
+
+[650B]
+ParameterName=Serial number
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[ManufacturerObjects]
+SupportedObjects=18
+1=0x2000
+2=0x2100
+3=0x2101
+4=0x2102
+5=0x2103
+6=0x2104
+7=0x2105
+8=0x2160
+9=0x2200
+10=0x2300
+11=0x3000
+12=0x3001
+13=0x3002
+14=0x3010
+15=0x3011
+16=0x3020
+17=0x3021
+18=0x3030
+
+[2000]
+ParameterName=Position value
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=1
+
+[2100]
+ParameterName=Operating parameter
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+PDOMapping=0
+
+[2101]
+ParameterName=Resolution per Revolution
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[2102]
+ParameterName=Total Resolution
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[2103]
+ParameterName=Presetwert
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[2104]
+ParameterName=Limit Switch Min
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[2105]
+ParameterName=Limit Switch Max
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[2160]
+ParameterName=Customer storage
+ObjectType=0x8
+SubNumber=5
+
+[2160sub0]
+ParameterName=Number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=4
+PDOMapping=0
+
+[2160sub1]
+ParameterName=Customer storage1
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[2160sub2]
+ParameterName=Customer storage2
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[2160sub3]
+ParameterName=Customer storage3
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[2160sub4]
+ParameterName=Customer storage4
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[2200]
+ParameterName=Cyclic Timer PDO 1
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+PDOMapping=0
+
+[2300]
+ParameterName=Save Parameter with Reset
+ObjectType=0x7
+DataType=0x0007
+AccessType=wo
+PDOMapping=0
+
+[3000]
+ParameterName=Node Number
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[3001]
+ParameterName=Baudrate
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+PDOMapping=0
+
+[3002]
+ParameterName=Terminal Resistor
+ObjectType=0x7
+DataType=0x0001
+AccessType=ro
+DefaultValue=0x0
+PDOMapping=0
+
+[3010]
+ParameterName=Speed Control
+ObjectType=0x9
+SubNumber=3
+
+[3010sub0]
+ParameterName=Number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=2
+PDOMapping=0
+
+[3010sub1]
+ParameterName=Enable Speed
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[3010sub2]
+ParameterName=Speed modus
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[3011]
+ParameterName=Speed Value
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=1
+
+[3020]
+ParameterName=Acceleration Control
+ObjectType=0x9
+SubNumber=3
+
+[3020sub0]
+ParameterName=Number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=2
+PDOMapping=0
+
+[3020sub1]
+ParameterName=Enable Acceleration
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[3020sub2]
+ParameterName=Acceleration Modus
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[3021]
+ParameterName=Acceleration Value
+ObjectType=0x7
+DataType=0x0004
+AccessType=ro
+PDOMapping=1
+
+[3030]
+ParameterName=C2-C5-Behavior
+ObjectType=0x9
+SubNumber=2
+
+[3030sub0]
+ParameterName=Security Code
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[3030sub1]
+ParameterName=Enable C2-C5-Behavior
+ObjectType=0x7
+DataType=0x0001
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
