@@ -1,2 +1,1 @@
-test
-\
+This application is designed to facilitate CAN open-based communication for defence system operations using a Raspberry Pi platform. It provides a user-friendly UI for configuring CAN open parameters, reading sensor data, handling Electronic Data Sheet (EDS) files, and writing configurations. The system will enable seamless integration with CAN open devices, ensuring efficient communication and configuration management.
